@@ -15,11 +15,19 @@ This is an example and step-by-step instructions on how to deploy a simple AWS s
 1. Write a CloudFormation template in YAML or JSON format that defines your AWS stack resources. In this example, we will be creating a  `stack.yml` with the necessary AWS resources defined within it.
 
 **Step 4: Configure GitHub Secrets**
+
+*# TODO: Add all varibles needed*
+*# TODO: add picture*
+
 1. In your GitHub repository, go to "Settings" and select "Secrets".
 2. Create two secrets: `AWS_ACCESS_KEY_ID` and `AWS_SECRET_ACCESS_KEY`. Set the values to the access key and secret access key you generated in Step 2.
 
+
 **Step 5: Set up GitHub Actions**
+
 *# TODO: add forking informaotin here*
+*# TODO: add to reflect what this deploy is doing
+
 1. In your GitHub repository, create a new directory named `.github/workflows`.
 2. Inside the `.github/workflows` directory, create a new YAML file (e.g., `deploy.yml`) to define your workflow.
 3. Add the following code to the `deploy.yml` file:
