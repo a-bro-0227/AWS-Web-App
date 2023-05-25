@@ -1,24 +1,25 @@
 
 # Welcome to your CDK Python project!
 
-Certainly! I can provide you with an example and step-by-step instructions on how to deploy a simple AWS stack using GitHub Actions. In this example, we'll deploy a basic AWS CloudFormation stack. Here's what you need to do:
+This is an example and step-by-step instructions on how to deploy a simple AWS stack using GitHub Actions. In this example, we'll deploy a basic AWS CloudFormation stack. Here's what you need to do:
 
 **Step 1: Set up an AWS Account and GitHub Repository**
 1. Create an AWS account if you don't have one already.
 2. Set up a GitHub repository where you'll store your code.
 
 **Step 2: Configure AWS Credentials**
-1. Generate an AWS access key and secret access key. You can do this by going to the AWS Management Console, navigating to IAM (Identity and Access Management), and creating a new IAM user with appropriate permissions.
+1. Generate an `AWS_ACCESS_KEY_ID` and `AWS_SECRET_ACCESS_KEY`. You can do this by going to the AWS Management Console, navigating to IAM (Identity and Access Management), and creating a new IAM user with appropriate permissions.
 2. Store the AWS access key and secret access key securely. You'll need them later to configure GitHub Secrets.
 
 **Step 3: Create a CloudFormation Template**
-1. Write a CloudFormation template in YAML or JSON format that defines your AWS stack resources. For example, you could create a file named `stack.yml` with the necessary AWS resources defined within it.
+1. Write a CloudFormation template in YAML or JSON format that defines your AWS stack resources. In this example, we will be creating a  `stack.yml` with the necessary AWS resources defined within it.
 
 **Step 4: Configure GitHub Secrets**
 1. In your GitHub repository, go to "Settings" and select "Secrets".
 2. Create two secrets: `AWS_ACCESS_KEY_ID` and `AWS_SECRET_ACCESS_KEY`. Set the values to the access key and secret access key you generated in Step 2.
 
 **Step 5: Set up GitHub Actions**
+*# TODO: add forking informaotin here*
 1. In your GitHub repository, create a new directory named `.github/workflows`.
 2. Inside the `.github/workflows` directory, create a new YAML file (e.g., `deploy.yml`) to define your workflow.
 3. Add the following code to the `deploy.yml` file:
