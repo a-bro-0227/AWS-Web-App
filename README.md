@@ -3,6 +3,8 @@
 
 This is an example and step-by-step instructions on how to deploy a simple AWS stack using GitHub Actions. In this example, we'll deploy a basic AWS CloudFormation stack. Here's what you need to do:
 
+*# TODO: add more headers*
+
 **Step 1: Set up an AWS Account and GitHub Repository**
 1. Create an AWS account if you don't have one already.
 2. Set up a GitHub repository where you'll store your code.
