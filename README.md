@@ -1,13 +1,11 @@
 
 # Welcome to your CDK Python project!
 
-This is an example and step-by-step instructions on how to deploy a simple AWS stack using GitHub Actions. In this example, we'll deploy a basic AWS CloudFormation stack. Here's what you need to do:
-
-*# TODO: add more headers*
+This is an example and step-by-step instructions on how to deploy a simple AWS stack using GitHub Actions. In this example, we'll deploy a basic AWS CloudFormation stack.
 
 **Step 1: Set up an AWS Account and GitHub Repository**
-1. Create an AWS account if you don't have one already.
-2. Set up a GitHub repository where you'll store your code.
+1. Create an AWS account if you don't have one already.  # TODO: Add link to set up
+2. Set up a GitHub repository where you'll store your code.  # TODO: Add link to GitHub docs
 
 **Step 2: Configure AWS Credentials**
 1. Generate an `AWS_ACCESS_KEY_ID` and `AWS_SECRET_ACCESS_KEY`. You can do this by going to the AWS Management Console, navigating to IAM (Identity and Access Management), and creating a new IAM user with appropriate permissions.
@@ -18,16 +16,16 @@ This is an example and step-by-step instructions on how to deploy a simple AWS s
 
 **Step 4: Configure GitHub Secrets**
 
-*# TODO: Add all varibles needed*
-*# TODO: add picture*
+*# TODO: Add all variables needed*
 
 1. In your GitHub repository, go to "Settings" and select "Secrets".
 2. Create two secrets: `AWS_ACCESS_KEY_ID` and `AWS_SECRET_ACCESS_KEY`. Set the values to the access key and secret access key you generated in Step 2.
 
+*# TODO: add picture*
 
 **Step 5: Set up GitHub Actions**
 
-*# TODO: add forking informaotin here*
+*# TODO: add forking information here*
 *# TODO: add to reflect what this deploy is doing
 
 1. In your GitHub repository, create a new directory named `.github/workflows`.
@@ -68,10 +66,6 @@ That's it! Now, whenever you push changes to your CloudFormation template in the
 
 Note: This example uses the AWS CLI to deploy the stack. Make sure the machine running the GitHub Actions workflow has the AWS CLI installed and configured with appropriate permissions to deploy the stack.
 
-
-This is a blank project for CDK development with Python.
-
-The `cdk.json` file tells the CDK Toolkit how to execute your app.
 
 This project is set up like a standard Python project.  The initialization
 process also creates a virtualenv within this project, stored under the `.venv`
