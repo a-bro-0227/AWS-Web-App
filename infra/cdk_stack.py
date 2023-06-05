@@ -1,9 +1,9 @@
-# can rename this file later. 
-import os 
-from constructs import Construct
-from aws_cdk import (Stack, aws_lambda, aws_dynamodb, aws_kms)
+from aws_cdk import core
+from aws_cdk import aws_s3 as s3
 
-class CdkStack(Stack): 
-    def __init__(self, scope: Construct, id: str, **kwargs) -> None: 
+class CDKStack(core.Stack):
+    def __init__(self, scope: core.Construct, id: str, **kwargs) -> None:
         super().__init__(scope, id, **kwargs)
-        # cdk code here... 
+
+        # Create an S3 bucket
+        s3.Bucket(self, "cdk-test-bucket")

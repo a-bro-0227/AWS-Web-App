@@ -1,15 +1,20 @@
 
 # Welcome to your CDK Python project!
 
-This is an example and step-by-step instructions on how to deploy a simple AWS stack using GitHub Actions. In this example, we'll deploy a basic AWS CloudFormation stack.
+This is an step-by-step instructions on how to deploy a simple AWS stack using GitHub Actions.
+
+
+# Set-Up and Configuration
 
 **Step 1: Set up an AWS Account and GitHub Repository**
 1. Create an AWS account if you don't have one already.  # TODO: Add link to set up
 2. Set up a GitHub repository where you'll store your code.  # TODO: Add link to GitHub docs
 
 **Step 2: Configure AWS Credentials**
-1. Generate an `AWS_ACCESS_KEY_ID` and `AWS_SECRET_ACCESS_KEY`. You can do this by going to the AWS Management Console, navigating to IAM (Identity and Access Management), and creating a new IAM user with appropriate permissions.
-2. Store the AWS access key and secret access key securely. You'll need them later to configure GitHub Secrets.
+1. Create an IAM user in your AWS account with the necessary permissions to create and manage S3 buckets.
+Obtain the Access Key ID and Secret Access Key for the IAM user.
+2. Generate an `AWS_ACCESS_KEY_ID` and `AWS_SECRET_ACCESS_KEY`. You can do this by going to the AWS Management Console, navigating to IAM (Identity and Access Management), and creating a new IAM user with appropriate permissions.
+3. Store the AWS access key and secret access key securely. You'll need them later to configure GitHub Secrets.
 
 **Step 3: Create a CloudFormation Template**
 1. Write a CloudFormation template in YAML or JSON format that defines your AWS stack resources. In this example, we will be creating a  `stack.yml` with the necessary AWS resources defined within it.
@@ -26,8 +31,8 @@ This is an example and step-by-step instructions on how to deploy a simple AWS s
 **Step 5: Set up GitHub Actions**
 
 *# TODO: add forking information here*
-*# TODO: add to reflect what this deploy is doing
 
+*(The might want to provide the below and just explain it)*
 1. In your GitHub repository, create a new directory named `.github/workflows`.
 2. Inside the `.github/workflows` directory, create a new YAML file (e.g., `deploy.yml`) to define your workflow.
 3. Add the following code to the `deploy.yml` file:
@@ -64,8 +69,10 @@ jobs:
 
 That's it! Now, whenever you push changes to your CloudFormation template in the main branch of your GitHub repository, the GitHub Actions workflow will be triggered, deploying your AWS CloudFormation stack. You can view the deployment progress and any potential errors in the Actions tab of your GitHub repository.
 
-Note: This example uses the AWS CLI to deploy the stack. Make sure the machine running the GitHub Actions workflow has the AWS CLI installed and configured with appropriate permissions to deploy the stack.
+*# Note: This example uses the AWS CLI to deploy the stack. Make sure the machine running the GitHub Actions workflow has the AWS CLI installed and configured with appropriate permissions to deploy the stack.*
 
+
+# Using Python
 
 This project is set up like a standard Python project.  The initialization
 process also creates a virtualenv within this project, stored under the `.venv`
