@@ -1,5 +1,5 @@
 from aws_cdk import core
-from cdk.cdk_stack import CDKStack
+from infra.cdk_stack import CDKStack
 
 app = core.App()
 CDKStack(app, "my-bucket-stack")
