@@ -1,7 +1,7 @@
 
 # Welcome to your CDK Python project!
 
-This is an step-by-step instructions on how to deploy a simple AWS stack using GitHub Actions.
+This is a step-by-step instructions on how to deploy a simple AWS stack using GitHub Actions.
 
 
 # Set-Up and Configuration
